@@ -1,3 +1,6 @@
+import { LayoutGridIcon, PackageIcon, ShoppingBasketIcon } from "lucide-react";
+import SidebarButton from "./sidebar-button";
+
 const Sidebar = () => {
   return (
     <aside className="flex w-60 flex-col bg-white text-[#00A180]">
@@ -5,15 +8,18 @@ const Sidebar = () => {
         <h1 className="text-start text-2xl font-black">STOCKLY</h1>
       </div>
       <nav className="flex flex-col gap-2 p-2">
-        <button className="w-full rounded-lg bg-[#EBFAF7] px-4 py-2 text-start">
+        <SidebarButton href="/">
+          <LayoutGridIcon size={20} />
           Dashboard
-        </button>
-        <button className="w-full rounded-lg px-4 py-2 text-start">
+        </SidebarButton>
+        <SidebarButton href="/products">
+          <PackageIcon size={20} />
           Produtos
-        </button>
-        <button className="w-full rounded-lg px-4 py-2 text-start">
+        </SidebarButton>
+        <SidebarButton href="/sales">
+          <ShoppingBasketIcon size={20} />
           Vendas
-        </button>
+        </SidebarButton>
       </nav>
     </aside>
   );

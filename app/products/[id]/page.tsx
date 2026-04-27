@@ -1,9 +1,9 @@
 interface Params {
-  id: string
+  id: string;
 }
 
-const ProductDetailsPage = ({ params: { id } }: {params: Params}) => {
-  return <div>Product: {id}</div>
-}
+const ProductDetailsPage = ({ params: { id } }: { params: Params }) => {
+  return <div>Product: {id}</div>;
+};
 
-export default ProductDetailsPage
+export default ProductDetailsPage;
