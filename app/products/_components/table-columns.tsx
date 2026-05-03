@@ -3,7 +3,6 @@
 import { Badge } from "@/app/_components/ui/badge";
 import type { Product } from "@/app/generated/prisma/client";
 import { ColumnDef } from "@tanstack/react-table";
-import { CircleIcon } from "lucide-react";
 
 export const columns: ColumnDef<Product>[] = [
   {
